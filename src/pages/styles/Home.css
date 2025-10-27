@@ -1,0 +1,131 @@
+.home-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  background: whitesmoke
+}
+
+.home-hero {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: rgb(204, 20, 20);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.highlight {
+  background: rgb(204, 20, 20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.home-description {
+  font-size: 1.3rem;
+  color: #5a6c7d;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.home-features {
+  margin: 3rem 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.home-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #2883aa 0%, #8b8394 100%);
+  border: none;
+}
+
+.btn-secondary{
+  background: linear-gradient(135deg, #c2ced3 0%, #671cbc 100%);
+  border: none;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #41ba5b 0%, #9e99a3 100%);
+  transform: translateY(-2px);
+  
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #41ba5b 0%, #9e99a3 100%);
+  transform: translateY(-2px);
+  }
+
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem;
+  }
+  
+  .home-description {
+    font-size: 1.1rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .home-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home-actions .btn {
+    min-width: 200px;
+  }
+}
